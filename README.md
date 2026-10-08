@@ -1,22 +1,8 @@
 ## 前排劝退
 **不回答“怎么用”这类问题；无前端、无订阅，专注代理本身：极致直连 + 多落地协议。**  
-**仅适合对 CF 节点有一定基础的同学，至少会用节点模板修改节点信息。订阅可自行搭配 [EDT](https://github.com/cmliu/edgetunnel) 或订阅器实现。**
+**仅适合对 CF 节点有一定基础的同学，至少会用节点模板修改节点信息。
 
----
-## 文件说明
 
-| 文件 | 传输 | 协议 | 落地支持 | 备注 |
-| --- | --- | --- | --- | --- |
-| **worker.js** | ws / xhttp | vless / trojan / ss | `!txt + socks5 + http + https + sstp + turn + turns + global + auto` | 全功能，https / turns 为完全体 |
-| **snippet.js** | ws / xhttp | vless / trojan / ss | `!txt + socks5 + http + https + sstp + turn + turns + global + auto` | 同 worker.js，但 https / turns 为非完全体 |
-| **https.js** | ws / xhttp | vless / ss | `!txt + https + global + auto` | https 为完全体；无 trojan，无其它落地代理 |
-| **lite.js** | ws / xhttp | vless / trojan / ss | `!txt + auto` | 精简版，仅 直连 + proxyip，无 global、无落地代理，冷启快，性能预期略好于其它三个 |
-
-_建议：ss 用 notls。_  
-_注1：ss 仅 ws，无 xhttp。_  
-_注2：代码验证基于 Pro 计划 snippet，worker free。_
-
----
 ## 功能说明
 
 1. **!txt：** 域名加 `!txt` 后缀时，取其 TXT 记录值作为 proxyip 或协议代理（多个值以 `,` 或换行分隔，随机取一条）；普通 A 记录域名无需加。**四个文件均支持。**
@@ -60,18 +46,12 @@ _注2：代码验证基于 Pro 计划 snippet，worker free。_
 ```ws
 vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@www.shopify.com:443?path=%2Ffdip%3D1.2.3.4%3A443%3Fed%3D2560&security=tls&encryption=none&insecure=0&host=vless.snippets.cf&fp=chrome&type=ws&allowInsecure=0&sni=vless.snippets.cf#ws
 ```
-**Vless xhttp**
-```xhttp
-vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@www.shopify.com:443?mode=stream-one&path=%2Ffdip%3D1.2.3.4%3A443%3Fed%3D2560&security=tls&alpn=h2&encryption=none&insecure=0&host=vless.snippets.cf&fp=chrome&type=xhttp&allowInsecure=0&sni=vless.snippets.cf#xhttp
-```
+
 **Trojan ws**
 ```ws
 trojan://495c7195-85b8-498a-bf20-2ea9ce9175b5@www.shopify.com:443?path=%2Ffdip%3D1.2.3.4.%3A443%3Fed%3D2560&security=tls&insecure=0&host=trojan.snippet.cf&fp=chrome&type=ws&allowInsecure=0&sni=trojan.snippet.cf#ws
 ```
-**Trojan xhttp**
-```xhttp
-trojan://495c7195-85b8-498a-bf20-2ea9ce9175b5@www.shopify.com:443?mode=stream-one&path=%2Ffdip%3D1.2.3.4.%3A443%3Fed%3D2560&security=tls&alpn=h2&insecure=0&host=trojan.snippet.cf&fp=chrome&type=xhttp&allowInsecure=0&sni=trojan.snippet.cf#xhttp
-```
+
 **SS(notls) ws**
 ```ws
 ss://YWVzLTEyOC1nY206NDk1YzcxOTUtODViOC00OThhLWJmMjAtMmVhOWNlOTE3NWI1@www.shopify.com:80?plugin=v2ray-plugin%3Bmode%3Dwebsocket%3Bhost%3Dss.snippets.cf%3Bpath%3D%2Ffdip%3D1.2.3.4%3A443%3Fed%3D2560%3Bmux%3D0#ws
@@ -98,10 +78,3 @@ ss://YWVzLTEyOC1nY206NDk1YzcxOTUtODViOC00OThhLWJmMjAtMmVhOWNlOTE3NWI1@www.shopif
 </details>
 
 ---
-## 特别提醒
-**若 1101 请全删旧片段再部署，已有正常运行中的片段需谨慎，部署新片段会触发全部片段代码检测。**  
-**有问题请开 issue 或联系 [tg bot](https://t.me/meindmBot) 直奔主题，欢迎反馈，欢迎 PR。**
-
----
-## 鸣谢
-**[AK](https://github.com/ToiCF)、[CM](https://github.com/cmliu)、[ZJ](https://github.com/1345695)、AI**
