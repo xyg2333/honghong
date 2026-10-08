@@ -1,22 +1,40 @@
+## 前排劝退
+**不回答“怎么用”这类问题；无前端、无订阅，专注代理本身：极致直连 + 多落地协议。**  
+**仅适合对 CF 节点有一定基础的同学，至少会用节点模板修改节点信息。
+
+
+## 功能说明
+
+1. **!txt：** 域名加 `!txt` 后缀时，取其 TXT 记录值作为 proxyip 或协议代理（多个值以 `,` 或换行分隔，随机取一条）；普通 A 记录域名无需加。**四个文件均支持。**
+2. **socks5：** `socks5://[user:pass@]host:port`（`socks://` 同样接受）。**worker.js / snippet.js。**
+3. **http：** `http://[user:pass@]host:port`。**worker.js / snippet.js。**
+4. **https：** 完全体 `https://domain:port` 走 CF secureTransport，`https://ip:port` 与 `https://host:port!ip` 走内置 TlsClient；非完全体仅支持 `https://domain:port`。**worker.js / https.js 为完全体，snippet.js 为非完全体。**
+5. **sstp：** `sstp://[user:pass@]host:port`，默认用户密码 `vpn`。**worker.js / snippet.js。**
+6. **turn：** `turn://host:port`，默认端口 3478。**worker.js / snippet.js。**
+7. **turns：** turn over tls，默认端口 5349；完全体支持 `turns://domain:port`、`turns://ip:port` 与 `!ip` 后缀，非完全体仅 `turns://domain:port`。**worker.js 为完全体，snippet.js 为非完全体。**
+8. **global：** 协议代理（socks5 等）默认“先试直连、失败再走代理”的回落模式，`?global=1` 改为直接使用代理。**worker.js / snippet.js / https.js。**
+9. **auto：** ZJ 自适应 cf 官方 proxyip 服务，按 colo 分流：`auto=1` 时 hkg 走 `p→e→zj`、其它强制 `zj`；`auto=2` 全部强制 `zj`；无 auto 或其它值走 `p→e→zj`。**四个文件均支持。**
+
+**说明：** `p` = 路径指定的代理，`e` = 配置的 proxyip，`zj` = 按 colo 生成的 ZJ 官方 proxyip。  
+**注：** TXT 内容以 `,` 分隔、换行或两者混用；这些功能解决的是 CF 节点的落地问题。
+
+---
 ## 路径示例
 
 路径统一为 `/{任意字母数字}=代理`（如 `/fdip=...`，`fdip` 可换成任意字母数字组合），`ed=2560` 放最后。
 
-| 用途 | 路径 | worker.js | snippet.js | https.js | lite.js |
-| --- | --- | :---: | :---: | :---: | :---: |
-| 直连 / proxyip | `/fdip=1.2.3.4:443?ed=2560` | ✓ | ✓ | ✓ | ✓ |
-| TXT 记录 | `/fdip=domain!txt?ed=2560` | ✓ | ✓ | ✓ | ✓ |
-| socks5 | `/fdip=socks5://host:port?ed=2560` | ✓ | ✓ | — | — |
-| http | `/fdip=http://host:port?ed=2560` | ✓ | ✓ | — | — |
-| https（域名） | `/fdip=https://domain:port?ed=2560` | ✓ | ✓ | ✓ | — |
-| https（IP） | `/fdip=https://ip:port?ed=2560` | ✓ | — | ✓ | — |
-| https（强制 TlsClient） | `/fdip=https://host:port!ip?ed=2560` | ✓ | — | ✓ | — |
-| sstp | `/fdip=sstp://host:port?ed=2560` | ✓ | ✓ | — | — |
-| turn | `/fdip=turn://host:port?ed=2560` | ✓ | ✓ | — | — |
-| turns（域名） | `/fdip=turns://domain:port?ed=2560` | ✓ | ✓ | — | — |
-| turns（IP / `!ip`） | `/fdip=turns://ip:port?ed=2560` | ✓ | — | — | — |
-| global | `/fdip={proxy}?global=1&ed=2560` | ✓ | ✓ | ✓ | — |
-| auto | `/?auto=1&ed=2560`、`/fdip={proxy}?auto=1&ed=2560` | ✓ | ✓ | ✓ | ✓ |
+| 用途 | 路径 | snippet.js |
+| --- | --- | :---: |
+| 直连 / proxyip | `/fdip=1.2.3.4:443?ed=2560` | ✓ |
+| TXT 记录 | `/fdip=domain!txt?ed=2560` | ✓ |
+| socks5 | `/fdip=socks5://host:port?ed=2560` | ✓ |
+| http | `/fdip=http://host:port?ed=2560` | ✓ |
+| https（域名） | `/fdip=https://domain:port?ed=2560` | ✓ |
+| sstp | `/fdip=sstp://host:port?ed=2560` | ✓ |
+| turn | `/fdip=turn://host:port?ed=2560` | ✓ |
+| turns（域名） | `/fdip=turns://domain:port?ed=2560` | ✓ |
+| global | `/fdip={proxy}?global=1&ed=2560` | ✓ |
+| auto | `/?auto=1&ed=2560`、`/fdip={proxy}?auto=1&ed=2560` | ✓ |
 
 ---
 ## 节点示例
