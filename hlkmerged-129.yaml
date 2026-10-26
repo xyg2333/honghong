@@ -1,0 +1,3397 @@
+mixed-port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: :9090
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  default-nameserver:
+  - 223.5.5.5
+  - 1.1.1.1
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+  - '*.lan'
+  - '*.localhost'
+  nameserver:
+  - https://dns.alidns.com/dns-query
+  - https://doh.pub/dns-query
+proxies:
+- name: 🇭🇰 香港｜Hong Kong 01
+  type: vless
+  server: r0en5ahi3lmgkxbhgb5aegn8o.hishis.cn
+  port: 44361
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: 2Pkxdiu4QDOEBZb-gQ0zPOMoj4Gzef6swOP0jOPhHBc
+    short-id: 0fd8d811
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 香港｜Hong Kong 01
+    cleanName: 香港｜Hong Kong 01
+    multiplier: 1
+    region: 香港
+    flag: 🇭🇰
+    tags:
+    - Kong
+- name: 🇭🇰 香港｜Hong Kong 02
+  type: vless
+  server: r0en5ahi3lmgkxbhgb5aegn8o.hishis.cn
+  port: 29946
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: hj7eiNAG73LvR6wFONbefuGMeHsfJtGv6kjTl-5OIlw
+    short-id: 8e9fdf48
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 香港｜Hong Kong 02
+    cleanName: 香港｜Hong Kong 02
+    multiplier: 1
+    region: 香港
+    flag: 🇭🇰
+    tags:
+    - Kong
+- name: 🇭🇰 香港｜Hong Kong 03
+  type: vless
+  server: r0en5ahi3lmgkxbhgb5aegn8o.hishis.cn
+  port: 50994
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: 2Pkxdiu4QDOEBZb-gQ0zPOMoj4Gzef6swOP0jOPhHBc
+    short-id: 0fd8d811
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 香港｜Hong Kong 03
+    cleanName: 香港｜Hong Kong 03
+    multiplier: 1
+    region: 香港
+    flag: 🇭🇰
+    tags:
+    - Kong
+- name: 🇭🇰 香港｜Hong Kong 04
+  type: vless
+  server: r0en5ahi3lmgkxbhgb5aegn8o.hishis.cn
+  port: 29947
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: hj7eiNAG73LvR6wFONbefuGMeHsfJtGv6kjTl-5OIlw
+    short-id: 8e9fdf48
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 香港｜Hong Kong 04
+    cleanName: 香港｜Hong Kong 04
+    multiplier: 1
+    region: 香港
+    flag: 🇭🇰
+    tags:
+    - Kong
+- name: 🇭🇰 香港｜Hong Kong 05
+  type: vless
+  server: r0en5ahi3lmgkxbhgb5aegn8o.hishis.cn
+  port: 41187
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: 2Pkxdiu4QDOEBZb-gQ0zPOMoj4Gzef6swOP0jOPhHBc
+    short-id: 0fd8d811
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 香港｜Hong Kong 05
+    cleanName: 香港｜Hong Kong 05
+    multiplier: 1
+    region: 香港
+    flag: 🇭🇰
+    tags:
+    - Kong
+- name: 🇭🇰 香港｜Hong Kong 06
+  type: vless
+  server: r0en5ahi3lmgkxbhgb5aegn8o.hishis.cn
+  port: 52094
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: hj7eiNAG73LvR6wFONbefuGMeHsfJtGv6kjTl-5OIlw
+    short-id: 8e9fdf48
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 香港｜Hong Kong 06
+    cleanName: 香港｜Hong Kong 06
+    multiplier: 1
+    region: 香港
+    flag: 🇭🇰
+    tags:
+    - Kong
+- name: 🇭🇰 香港｜Hong Kong 07
+  type: vless
+  server: r0en5ahi3lmgkxbhgb5aegn8o.hishis.cn
+  port: 64149
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: 2Pkxdiu4QDOEBZb-gQ0zPOMoj4Gzef6swOP0jOPhHBc
+    short-id: 0fd8d811
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 香港｜Hong Kong 07
+    cleanName: 香港｜Hong Kong 07
+    multiplier: 1
+    region: 香港
+    flag: 🇭🇰
+    tags:
+    - Kong
+- name: 🇭🇰 香港｜Hong Kong 08
+  type: vless
+  server: r0en5ahi3lmgkxbhgb5aegn8o.hishis.cn
+  port: 10159
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: hj7eiNAG73LvR6wFONbefuGMeHsfJtGv6kjTl-5OIlw
+    short-id: 8e9fdf48
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 香港｜Hong Kong 08
+    cleanName: 香港｜Hong Kong 08
+    multiplier: 1
+    region: 香港
+    flag: 🇭🇰
+    tags:
+    - Kong
+- name: 🇭🇰 香港｜Hong Kong 09
+  type: vless
+  server: r0en5ahi3lmgkxbhgb5aegn8o.hishis.cn
+  port: 57755
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: 2Pkxdiu4QDOEBZb-gQ0zPOMoj4Gzef6swOP0jOPhHBc
+    short-id: 0fd8d811
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 香港｜Hong Kong 09
+    cleanName: 香港｜Hong Kong 09
+    multiplier: 1
+    region: 香港
+    flag: 🇭🇰
+    tags:
+    - Kong
+- name: 🇭🇰 香港｜Hong Kong 10
+  type: vless
+  server: r0en5ahi3lmgkxbhgb5aegn8o.hishis.cn
+  port: 24316
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: hj7eiNAG73LvR6wFONbefuGMeHsfJtGv6kjTl-5OIlw
+    short-id: 8e9fdf48
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 香港｜Hong Kong 10
+    cleanName: 香港｜Hong Kong 10
+    multiplier: 1
+    region: 香港
+    flag: 🇭🇰
+    tags:
+    - Kong
+- name: 🇯🇵 日本｜Japan 01
+  type: vless
+  server: xqnzfihz1e55kgepn0ifvpag5.hishis.cn
+  port: 49456
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: kF-WtoIEBrfy6lhuETY8w42r3RznlqNt52hdLHk4xFs
+    short-id: 494fa9c9
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 日本｜Japan 01
+    cleanName: 日本｜Japan 01
+    multiplier: 1
+    region: 日本
+    flag: 🇯🇵
+    tags: []
+- name: 🇯🇵 日本｜Japan 02
+  type: vless
+  server: xqnzfihz1e55kgepn0ifvpag5.hishis.cn
+  port: 33219
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: kF-WtoIEBrfy6lhuETY8w42r3RznlqNt52hdLHk4xFs
+    short-id: 494fa9c9
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 日本｜Japan 02
+    cleanName: 日本｜Japan 02
+    multiplier: 1
+    region: 日本
+    flag: 🇯🇵
+    tags: []
+- name: 🇯🇵 日本｜Japan 03
+  type: vless
+  server: xqnzfihz1e55kgepn0ifvpag5.hishis.cn
+  port: 7555
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: kF-WtoIEBrfy6lhuETY8w42r3RznlqNt52hdLHk4xFs
+    short-id: 494fa9c9
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 日本｜Japan 03
+    cleanName: 日本｜Japan 03
+    multiplier: 1
+    region: 日本
+    flag: 🇯🇵
+    tags: []
+- name: 🇯🇵 日本｜Japan 04
+  type: vless
+  server: xqnzfihz1e55kgepn0ifvpag5.hishis.cn
+  port: 49335
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: kF-WtoIEBrfy6lhuETY8w42r3RznlqNt52hdLHk4xFs
+    short-id: 494fa9c9
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 日本｜Japan 04
+    cleanName: 日本｜Japan 04
+    multiplier: 1
+    region: 日本
+    flag: 🇯🇵
+    tags: []
+- name: 🇯🇵 日本｜Japan 05
+  type: vless
+  server: xqnzfihz1e55kgepn0ifvpag5.hishis.cn
+  port: 34773
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: kF-WtoIEBrfy6lhuETY8w42r3RznlqNt52hdLHk4xFs
+    short-id: 494fa9c9
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 日本｜Japan 05
+    cleanName: 日本｜Japan 05
+    multiplier: 1
+    region: 日本
+    flag: 🇯🇵
+    tags: []
+- name: 🇯🇵 日本｜JP 06
+  type: vless
+  server: xqnzfihz1e55kgepn0ifvpag5.hishis.cn
+  port: 57253
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: kF-WtoIEBrfy6lhuETY8w42r3RznlqNt52hdLHk4xFs
+    short-id: 494fa9c9
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 日本｜JP 06
+    cleanName: 日本｜JP 06
+    multiplier: 1
+    region: 日本
+    flag: 🇯🇵
+    tags: []
+- name: 🇯🇵 日本｜Japan 07
+  type: vless
+  server: xqnzfihz1e55kgepn0ifvpag5.hishis.cn
+  port: 38792
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: kF-WtoIEBrfy6lhuETY8w42r3RznlqNt52hdLHk4xFs
+    short-id: 494fa9c9
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 日本｜Japan 07
+    cleanName: 日本｜Japan 07
+    multiplier: 1
+    region: 日本
+    flag: 🇯🇵
+    tags: []
+- name: 🇯🇵 日本｜Japan 08
+  type: vless
+  server: xqnzfihz1e55kgepn0ifvpag5.hishis.cn
+  port: 62249
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: kF-WtoIEBrfy6lhuETY8w42r3RznlqNt52hdLHk4xFs
+    short-id: 494fa9c9
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 日本｜Japan 08
+    cleanName: 日本｜Japan 08
+    multiplier: 1
+    region: 日本
+    flag: 🇯🇵
+    tags: []
+- name: 🇨🇳 台湾｜Taiwan 01
+  type: vless
+  server: eee1g5o9y6v9dbs5ja7x6afrz.hishis.cn
+  port: 8839
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: oNufXYL4KBpWlN1c6FyA2oqNO2nBq5JKo_yAzQ3J9Ac
+    short-id: 587e3b58
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 台湾｜Taiwan 01
+    cleanName: 台湾｜Taiwan 01
+    multiplier: 1
+    region: 台湾
+    flag: 🇨🇳
+    tags: []
+- name: 🇨🇳 台湾｜Taiwan 02
+  type: vless
+  server: eee1g5o9y6v9dbs5ja7x6afrz.hishis.cn
+  port: 44171
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: oNufXYL4KBpWlN1c6FyA2oqNO2nBq5JKo_yAzQ3J9Ac
+    short-id: 587e3b58
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 台湾｜Taiwan 02
+    cleanName: 台湾｜Taiwan 02
+    multiplier: 1
+    region: 台湾
+    flag: 🇨🇳
+    tags: []
+- name: 🇨🇳 台湾｜Taiwan 03
+  type: vless
+  server: eee1g5o9y6v9dbs5ja7x6afrz.hishis.cn
+  port: 21780
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: oNufXYL4KBpWlN1c6FyA2oqNO2nBq5JKo_yAzQ3J9Ac
+    short-id: 587e3b58
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 台湾｜Taiwan 03
+    cleanName: 台湾｜Taiwan 03
+    multiplier: 1
+    region: 台湾
+    flag: 🇨🇳
+    tags: []
+- name: 🇨🇳 台湾｜Taiwan 04
+  type: vless
+  server: eee1g5o9y6v9dbs5ja7x6afrz.hishis.cn
+  port: 29037
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: oNufXYL4KBpWlN1c6FyA2oqNO2nBq5JKo_yAzQ3J9Ac
+    short-id: 587e3b58
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 台湾｜Taiwan 04
+    cleanName: 台湾｜Taiwan 04
+    multiplier: 1
+    region: 台湾
+    flag: 🇨🇳
+    tags: []
+- name: 🇨🇳 台湾｜Taiwan 05
+  type: vless
+  server: eee1g5o9y6v9dbs5ja7x6afrz.hishis.cn
+  port: 18048
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: 7wlUiZrWY5b81Gefc0HCJpnjx-WF1vu1dDxt96yA1Vc
+    short-id: 39a3d830
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 台湾｜Taiwan 05
+    cleanName: 台湾｜Taiwan 05
+    multiplier: 1
+    region: 台湾
+    flag: 🇨🇳
+    tags: []
+- name: 🇨🇳 台湾｜Taiwan 06
+  type: vless
+  server: eee1g5o9y6v9dbs5ja7x6afrz.hishis.cn
+  port: 39763
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: 7wlUiZrWY5b81Gefc0HCJpnjx-WF1vu1dDxt96yA1Vc
+    short-id: 39a3d830
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 台湾｜Taiwan 06
+    cleanName: 台湾｜Taiwan 06
+    multiplier: 1
+    region: 台湾
+    flag: 🇨🇳
+    tags: []
+- name: 🇨🇳 台湾｜Taiwan 07
+  type: vless
+  server: eee1g5o9y6v9dbs5ja7x6afrz.hishis.cn
+  port: 41205
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: 0ztR5u9KziDMB3xIx8FP4SPoL7Wj-xmN-8ppbdTrD0U
+    short-id: 5c8d9089
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 台湾｜Taiwan 07
+    cleanName: 台湾｜Taiwan 07
+    multiplier: 1
+    region: 台湾
+    flag: 🇨🇳
+    tags: []
+- name: 🇨🇳 台湾｜Taiwan 08
+  type: vless
+  server: eee1g5o9y6v9dbs5ja7x6afrz.hishis.cn
+  port: 43420
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: 0ztR5u9KziDMB3xIx8FP4SPoL7Wj-xmN-8ppbdTrD0U
+    short-id: 5c8d9089
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 台湾｜Taiwan 08
+    cleanName: 台湾｜Taiwan 08
+    multiplier: 1
+    region: 台湾
+    flag: 🇨🇳
+    tags: []
+- name: 🇺🇸 美国 AT&T｜US 01
+  type: vless
+  server: 677x8h0r1n6cw08m6fpyuy035.hishis.cn
+  port: 55821
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: Qr_0Xn4cxS1WL4esyR0icWSZYncjaO6Z46D7g6sMumo
+    short-id: 43a9f2bd
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 美国 AT&T｜US 01
+    cleanName: 美国 AT&T｜US 01
+    multiplier: 1
+    region: 美国
+    flag: 🇺🇸
+    tags: []
+- name: 🇺🇸 美国 AT&T｜US 02
+  type: vless
+  server: 677x8h0r1n6cw08m6fpyuy035.hishis.cn
+  port: 17294
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: Qr_0Xn4cxS1WL4esyR0icWSZYncjaO6Z46D7g6sMumo
+    short-id: 43a9f2bd
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 美国 AT&T｜US 02
+    cleanName: 美国 AT&T｜US 02
+    multiplier: 1
+    region: 美国
+    flag: 🇺🇸
+    tags: []
+- name: 🇺🇸 美国 AT&T｜US 03
+  type: vless
+  server: 677x8h0r1n6cw08m6fpyuy035.hishis.cn
+  port: 12405
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: Qr_0Xn4cxS1WL4esyR0icWSZYncjaO6Z46D7g6sMumo
+    short-id: 43a9f2bd
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 美国 AT&T｜US 03
+    cleanName: 美国 AT&T｜US 03
+    multiplier: 1
+    region: 美国
+    flag: 🇺🇸
+    tags: []
+- name: 🇺🇸 美国 AT&T｜US 04
+  type: vless
+  server: 677x8h0r1n6cw08m6fpyuy035.hishis.cn
+  port: 27369
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: Qr_0Xn4cxS1WL4esyR0icWSZYncjaO6Z46D7g6sMumo
+    short-id: 43a9f2bd
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 美国 AT&T｜US 04
+    cleanName: 美国 AT&T｜US 04
+    multiplier: 1
+    region: 美国
+    flag: 🇺🇸
+    tags: []
+- name: 🇺🇸 美国｜USA 01 PRO
+  type: vless
+  server: 677x8h0r1n6cw08m6fpyuy035.hishis.cn
+  port: 32375
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: tXysyJO7YgeAeTUg2SCogHttSaxambbfV4iov2WgXG4
+    short-id: 55b06680
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 美国｜USA 01 PRO
+    cleanName: 美国｜USA 01 PRO
+    multiplier: 1
+    region: 美国
+    flag: 🇺🇸
+    tags: []
+- name: 🇺🇸 美国｜USA 02 PRO
+  type: vless
+  server: 677x8h0r1n6cw08m6fpyuy035.hishis.cn
+  port: 32376
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: aHvwnolWGuOOGJN1r33hF4pz4MfolaiN5qUSbW4rATw
+    short-id: 22c7e663
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 美国｜USA 02 PRO
+    cleanName: 美国｜USA 02 PRO
+    multiplier: 1
+    region: 美国
+    flag: 🇺🇸
+    tags: []
+- name: 🇺🇸 美国｜USA 03 PRO
+  type: vless
+  server: 677x8h0r1n6cw08m6fpyuy035.hishis.cn
+  port: 32377
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: FA3cWADn7dXiSxcmBAolJFBqllVYARPjja-rP1_3QkM
+    short-id: '17404979'
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 美国｜USA 03 PRO
+    cleanName: 美国｜USA 03 PRO
+    multiplier: 1
+    region: 美国
+    flag: 🇺🇸
+    tags: []
+- name: 🇺🇸 美国｜USA 04 PRO
+  type: vless
+  server: 677x8h0r1n6cw08m6fpyuy035.hishis.cn
+  port: 32378
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: GDfuRpdZtjy5U6ReEAYHuXKQviqRH_iEei4b1RhX5jI
+    short-id: 8447e29c
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 美国｜USA 04 PRO
+    cleanName: 美国｜USA 04 PRO
+    multiplier: 1
+    region: 美国
+    flag: 🇺🇸
+    tags: []
+- name: 🇺🇸 美国｜USA 01
+  type: vless
+  server: 154.9.241.7
+  port: 7800
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: tXysyJO7YgeAeTUg2SCogHttSaxambbfV4iov2WgXG4
+    short-id: 55b06680
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 美国｜USA 01
+    cleanName: 美国｜USA 01
+    multiplier: 1
+    region: 美国
+    flag: 🇺🇸
+    tags: []
+- name: 🇺🇸 美国｜USA 02
+  type: vless
+  server: 154.29.159.6
+  port: 7800
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: aHvwnolWGuOOGJN1r33hF4pz4MfolaiN5qUSbW4rATw
+    short-id: 22c7e663
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 美国｜USA 02
+    cleanName: 美国｜USA 02
+    multiplier: 1
+    region: 美国
+    flag: 🇺🇸
+    tags: []
+- name: 🇺🇸 美国｜USA 03
+  type: vless
+  server: 154.12.56.203
+  port: 7800
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: FA3cWADn7dXiSxcmBAolJFBqllVYARPjja-rP1_3QkM
+    short-id: '17404979'
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 美国｜USA 03
+    cleanName: 美国｜USA 03
+    multiplier: 1
+    region: 美国
+    flag: 🇺🇸
+    tags: []
+- name: 🇺🇸 美国｜USA 04
+  type: vless
+  server: 154.12.56.179
+  port: 7800
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: GDfuRpdZtjy5U6ReEAYHuXKQviqRH_iEei4b1RhX5jI
+    short-id: 8447e29c
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 美国｜USA 04
+    cleanName: 美国｜USA 04
+    multiplier: 1
+    region: 美国
+    flag: 🇺🇸
+    tags: []
+- name: 🇺🇸 美国｜USA 05
+  type: vless
+  server: 154.12.56.212
+  port: 7779
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: 95yo94DpF4FZ2Hu3vF0LiakczGyfxAsXcK4dx3jSAHM
+    short-id: 66b80f43
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 美国｜USA 05
+    cleanName: 美国｜USA 05
+    multiplier: 1
+    region: 美国
+    flag: 🇺🇸
+    tags: []
+- name: 🇺🇸 美国｜USA 06
+  type: vless
+  server: 154.12.56.161
+  port: 7800
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: YzZcKlatkrsX5HlyjWp7HP20_HjaqZh9RSHtbA782TE
+    short-id: d5c779b3
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 美国｜USA 06
+    cleanName: 美国｜USA 06
+    multiplier: 1
+    region: 美国
+    flag: 🇺🇸
+    tags: []
+- name: 🇺🇸 美国｜USA 07 x 0.2
+  type: vless
+  server: 156.229.167.6
+  port: 7800
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: qHMEDKjRJFRRhFxOh4Bss3psxRygMh4fhp29P1rW-00
+    short-id: 482ec441
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 美国｜USA 07 x 0.2
+    cleanName: 美国｜USA 07 x 0.2
+    multiplier: 1
+    region: 美国
+    flag: 🇺🇸
+    tags: []
+- name: 🇺🇸 美国｜USA 08 x 0.2
+  type: vless
+  server: 156.229.162.219
+  port: 7800
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: U6ZNjOcML7f_hOEE80q4dES1StrOvA8YkiTKpvD_jjA
+    short-id: 325f4582
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 美国｜USA 08 x 0.2
+    cleanName: 美国｜USA 08 x 0.2
+    multiplier: 1
+    region: 美国
+    flag: 🇺🇸
+    tags: []
+- name: 🇸🇬 新加坡｜Singapore 01
+  type: vless
+  server: 0ggx0dqts0zsiycmv7swbtd2w.hishis.cn
+  port: 27851
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: JPz4Fd-xa8Z39gbLBlZQwOOfjVbmQoFYxyEadLyklUA
+    short-id: 1f1c1a87
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 新加坡｜Singapore 01
+    cleanName: 新加坡｜Singapore 01
+    multiplier: 1
+    region: 新加坡
+    flag: 🇸🇬
+    tags: []
+- name: 🇸🇬 新加坡｜Singapore 02
+  type: vless
+  server: 0ggx0dqts0zsiycmv7swbtd2w.hishis.cn
+  port: 50455
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: 8DSPHnj5mCgTpPZZQftg_VQTXPweu6z237IHm8o-IjM
+    short-id: 7ed011d9
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 新加坡｜Singapore 02
+    cleanName: 新加坡｜Singapore 02
+    multiplier: 1
+    region: 新加坡
+    flag: 🇸🇬
+    tags: []
+- name: 🇸🇬 新加坡｜Singapore 03
+  type: vless
+  server: 0ggx0dqts0zsiycmv7swbtd2w.hishis.cn
+  port: 27853
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: JPz4Fd-xa8Z39gbLBlZQwOOfjVbmQoFYxyEadLyklUA
+    short-id: 1f1c1a87
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 新加坡｜Singapore 03
+    cleanName: 新加坡｜Singapore 03
+    multiplier: 1
+    region: 新加坡
+    flag: 🇸🇬
+    tags: []
+- name: 🇸🇬 新加坡｜Singapore 04
+  type: vless
+  server: 0ggx0dqts0zsiycmv7swbtd2w.hishis.cn
+  port: 37824
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: 8DSPHnj5mCgTpPZZQftg_VQTXPweu6z237IHm8o-IjM
+    short-id: 7ed011d9
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 新加坡｜Singapore 04
+    cleanName: 新加坡｜Singapore 04
+    multiplier: 1
+    region: 新加坡
+    flag: 🇸🇬
+    tags: []
+- name: 🇸🇬 新加坡｜Singapore 05
+  type: vless
+  server: 0ggx0dqts0zsiycmv7swbtd2w.hishis.cn
+  port: 27852
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: JPz4Fd-xa8Z39gbLBlZQwOOfjVbmQoFYxyEadLyklUA
+    short-id: 1f1c1a87
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 新加坡｜Singapore 05
+    cleanName: 新加坡｜Singapore 05
+    multiplier: 1
+    region: 新加坡
+    flag: 🇸🇬
+    tags: []
+- name: 🇸🇬 新加坡｜Singapore 06
+  type: vless
+  server: 0ggx0dqts0zsiycmv7swbtd2w.hishis.cn
+  port: 44830
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: 8DSPHnj5mCgTpPZZQftg_VQTXPweu6z237IHm8o-IjM
+    short-id: 7ed011d9
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 新加坡｜Singapore 06
+    cleanName: 新加坡｜Singapore 06
+    multiplier: 1
+    region: 新加坡
+    flag: 🇸🇬
+    tags: []
+- name: 🇸🇬 新加坡｜Singapore 07
+  type: vless
+  server: 0ggx0dqts0zsiycmv7swbtd2w.hishis.cn
+  port: 27854
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: JPz4Fd-xa8Z39gbLBlZQwOOfjVbmQoFYxyEadLyklUA
+    short-id: 1f1c1a87
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 新加坡｜Singapore 07
+    cleanName: 新加坡｜Singapore 07
+    multiplier: 1
+    region: 新加坡
+    flag: 🇸🇬
+    tags: []
+- name: 🇸🇬 新加坡｜Singapore 08
+  type: vless
+  server: 0ggx0dqts0zsiycmv7swbtd2w.hishis.cn
+  port: 31286
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: 8DSPHnj5mCgTpPZZQftg_VQTXPweu6z237IHm8o-IjM
+    short-id: 7ed011d9
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 新加坡｜Singapore 08
+    cleanName: 新加坡｜Singapore 08
+    multiplier: 1
+    region: 新加坡
+    flag: 🇸🇬
+    tags: []
+- name: 🌍 🎬 Emby 01 x 0.2
+  type: vless
+  server: ynr6z1vuueo2t89dq5x4v68xo.hishis.cn
+  port: 12036
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OJ_yZDM6tzBPEM6BjNfof-CyyX1PlNCMuc67nDXZano
+    short-id: 8821102e
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 🎬 Emby 01 x 0.2
+    cleanName: 🎬 Emby 01 x 0.2
+    multiplier: 1
+    region: 其他
+    flag: 🌍
+    tags:
+    - Emby
+- name: 🌍 🎬 Emby 02 x 0.2
+  type: vless
+  server: 13e79qr1ji46cv58nod3z1yur.hishis.cn
+  port: 25454
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OJ_yZDM6tzBPEM6BjNfof-CyyX1PlNCMuc67nDXZano
+    short-id: 8821102e
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 🎬 Emby 02 x 0.2
+    cleanName: 🎬 Emby 02 x 0.2
+    multiplier: 1
+    region: 其他
+    flag: 🌍
+    tags:
+    - Emby
+- name: 🌍 🎬 Emby 03 x 0.2
+  type: vless
+  server: ynr6z1vuueo2t89dq5x4v68xo.hishis.cn
+  port: 35631
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OJ_yZDM6tzBPEM6BjNfof-CyyX1PlNCMuc67nDXZano
+    short-id: 8821102e
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 🎬 Emby 03 x 0.2
+    cleanName: 🎬 Emby 03 x 0.2
+    multiplier: 1
+    region: 其他
+    flag: 🌍
+    tags:
+    - Emby
+- name: 🌍 🎬 Emby 04 x 0.2
+  type: vless
+  server: 13e79qr1ji46cv58nod3z1yur.hishis.cn
+  port: 58387
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OJ_yZDM6tzBPEM6BjNfof-CyyX1PlNCMuc67nDXZano
+    short-id: 8821102e
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 🎬 Emby 04 x 0.2
+    cleanName: 🎬 Emby 04 x 0.2
+    multiplier: 1
+    region: 其他
+    flag: 🌍
+    tags:
+    - Emby
+- name: 🎬 Emby｜01 · 0.2×
+  type: vless
+  server: ynr6z1vuueo2t89dq5x4v68xo.hishis.cn
+  port: 54481
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OJ_yZDM6tzBPEM6BjNfof-CyyX1PlNCMuc67nDXZano
+    short-id: 8821102e
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: Emby｜01 · 0.2×
+    cleanName: Emby｜01 · 0.2×
+    multiplier: 1
+    region: 其他
+    flag: 🎬
+    tags:
+    - Emby
+- name: 🎬 Emby｜02 · 0.2×
+  type: vless
+  server: 13e79qr1ji46cv58nod3z1yur.hishis.cn
+  port: 61986
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OJ_yZDM6tzBPEM6BjNfof-CyyX1PlNCMuc67nDXZano
+    short-id: 8821102e
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: Emby｜02 · 0.2×
+    cleanName: Emby｜02 · 0.2×
+    multiplier: 1
+    region: 其他
+    flag: 🎬
+    tags:
+    - Emby
+- name: 🎬 Emby｜03 · 0.2×
+  type: vless
+  server: ynr6z1vuueo2t89dq5x4v68xo.hishis.cn
+  port: 61691
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OJ_yZDM6tzBPEM6BjNfof-CyyX1PlNCMuc67nDXZano
+    short-id: 8821102e
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: Emby｜03 · 0.2×
+    cleanName: Emby｜03 · 0.2×
+    multiplier: 1
+    region: 其他
+    flag: 🎬
+    tags:
+    - Emby
+- name: 🎬 Emby｜04 · 0.2×
+  type: vless
+  server: 13e79qr1ji46cv58nod3z1yur.hishis.cn
+  port: 41490
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OJ_yZDM6tzBPEM6BjNfof-CyyX1PlNCMuc67nDXZano
+    short-id: 8821102e
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: Emby｜04 · 0.2×
+    cleanName: Emby｜04 · 0.2×
+    multiplier: 1
+    region: 其他
+    flag: 🎬
+    tags:
+    - Emby
+- name: 🇰🇷 韩国｜Korea 01
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 20289
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 韩国｜Korea 01
+    cleanName: 韩国｜Korea 01
+    multiplier: 1
+    region: 韩国
+    flag: 🇰🇷
+    tags: []
+- name: 🇰🇷 韩国｜Korea 02
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 33815
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 韩国｜Korea 02
+    cleanName: 韩国｜Korea 02
+    multiplier: 1
+    region: 韩国
+    flag: 🇰🇷
+    tags: []
+- name: 🇰🇷 韩国｜Korea 03
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 27734
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 韩国｜Korea 03
+    cleanName: 韩国｜Korea 03
+    multiplier: 1
+    region: 韩国
+    flag: 🇰🇷
+    tags: []
+- name: 🇰🇷 韩国｜Korea 04
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 22227
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 韩国｜Korea 04
+    cleanName: 韩国｜Korea 04
+    multiplier: 1
+    region: 韩国
+    flag: 🇰🇷
+    tags: []
+- name: 🇲🇾 马来西亚｜Malaysia 01
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 16430
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: UKrz6cTGHHyo3FasS6S1YheNAkebLNsFg7PjsrkZGTM
+    short-id: a46a2c9d
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 马来西亚｜Malaysia 01
+    cleanName: 马来西亚｜Malaysia 01
+    multiplier: 1
+    region: 马来西亚
+    flag: 🇲🇾
+    tags: []
+- name: 🇲🇾 马来西亚｜Malaysia 02
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 55983
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: UKrz6cTGHHyo3FasS6S1YheNAkebLNsFg7PjsrkZGTM
+    short-id: a46a2c9d
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 马来西亚｜Malaysia 02
+    cleanName: 马来西亚｜Malaysia 02
+    multiplier: 1
+    region: 马来西亚
+    flag: 🇲🇾
+    tags: []
+- name: 🇲🇾 马来西亚｜Malaysia 03
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 58895
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: UKrz6cTGHHyo3FasS6S1YheNAkebLNsFg7PjsrkZGTM
+    short-id: a46a2c9d
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 马来西亚｜Malaysia 03
+    cleanName: 马来西亚｜Malaysia 03
+    multiplier: 1
+    region: 马来西亚
+    flag: 🇲🇾
+    tags: []
+- name: 🇲🇾 马来西亚｜Malaysia 04
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 32820
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: UKrz6cTGHHyo3FasS6S1YheNAkebLNsFg7PjsrkZGTM
+    short-id: a46a2c9d
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 马来西亚｜Malaysia 04
+    cleanName: 马来西亚｜Malaysia 04
+    multiplier: 1
+    region: 马来西亚
+    flag: 🇲🇾
+    tags: []
+- name: 🇹🇭 泰国｜Thailand 01
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 40856
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 泰国｜Thailand 01
+    cleanName: 泰国｜Thailand 01
+    multiplier: 1
+    region: 泰国
+    flag: 🇹🇭
+    tags: []
+- name: 🇹🇭 泰国｜Thailand 02
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 41479
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 泰国｜Thailand 02
+    cleanName: 泰国｜Thailand 02
+    multiplier: 1
+    region: 泰国
+    flag: 🇹🇭
+    tags: []
+- name: 🇹🇭 泰国｜Thailand 03
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 32790
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 泰国｜Thailand 03
+    cleanName: 泰国｜Thailand 03
+    multiplier: 1
+    region: 泰国
+    flag: 🇹🇭
+    tags: []
+- name: 🇹🇭 泰国｜Thailand 04
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 35624
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 泰国｜Thailand 04
+    cleanName: 泰国｜Thailand 04
+    multiplier: 1
+    region: 泰国
+    flag: 🇹🇭
+    tags: []
+- name: 🇻🇳 越南｜Vietnam 01
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 22268
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 越南｜Vietnam 01
+    cleanName: 越南｜Vietnam 01
+    multiplier: 1
+    region: 越南
+    flag: 🇻🇳
+    tags: []
+- name: 🇻🇳 越南｜Vietnam 02
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 51542
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 越南｜Vietnam 02
+    cleanName: 越南｜Vietnam 02
+    multiplier: 1
+    region: 越南
+    flag: 🇻🇳
+    tags: []
+- name: 🇻🇳 越南｜Vietnam 03
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 32388
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 越南｜Vietnam 03
+    cleanName: 越南｜Vietnam 03
+    multiplier: 1
+    region: 越南
+    flag: 🇻🇳
+    tags: []
+- name: 🇻🇳 越南｜Vietnam 04
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 44560
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 越南｜Vietnam 04
+    cleanName: 越南｜Vietnam 04
+    multiplier: 1
+    region: 越南
+    flag: 🇻🇳
+    tags: []
+- name: 🌍 澳门｜Macau 01
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 50281
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 澳门｜Macau 01
+    cleanName: 澳门｜Macau 01
+    multiplier: 1
+    region: 其他
+    flag: 🌍
+    tags: []
+- name: 🌍 澳门｜Macau 02
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 10447
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 澳门｜Macau 02
+    cleanName: 澳门｜Macau 02
+    multiplier: 1
+    region: 其他
+    flag: 🌍
+    tags: []
+- name: 🌍 澳门｜Macau 03
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 14461
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 澳门｜Macau 03
+    cleanName: 澳门｜Macau 03
+    multiplier: 1
+    region: 其他
+    flag: 🌍
+    tags: []
+- name: 🌍 澳门｜Macau 04
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 23248
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 澳门｜Macau 04
+    cleanName: 澳门｜Macau 04
+    multiplier: 1
+    region: 其他
+    flag: 🌍
+    tags: []
+- name: 🇵🇭 菲律宾｜Philippines 01
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 20038
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 菲律宾｜Philippines 01
+    cleanName: 菲律宾｜Philippines 01
+    multiplier: 1
+    region: 菲律宾
+    flag: 🇵🇭
+    tags: []
+- name: 🇵🇭 菲律宾｜Philippines 02
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 51048
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 菲律宾｜Philippines 02
+    cleanName: 菲律宾｜Philippines 02
+    multiplier: 1
+    region: 菲律宾
+    flag: 🇵🇭
+    tags: []
+- name: 🇵🇭 菲律宾｜Philippines 03
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 57598
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 菲律宾｜Philippines 03
+    cleanName: 菲律宾｜Philippines 03
+    multiplier: 1
+    region: 菲律宾
+    flag: 🇵🇭
+    tags: []
+- name: 🇵🇭 菲律宾｜Philippines 04
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 34436
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 菲律宾｜Philippines 04
+    cleanName: 菲律宾｜Philippines 04
+    multiplier: 1
+    region: 菲律宾
+    flag: 🇵🇭
+    tags: []
+- name: 🇦🇺 悉尼｜Sydney
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 28242
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 悉尼｜Sydney
+    cleanName: 悉尼｜Sydney
+    multiplier: 1
+    region: 澳大利亚
+    flag: 🇦🇺
+    tags: []
+- name: 🇦🇺 墨尔本｜Melbourne
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 10759
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 墨尔本｜Melbourne
+    cleanName: 墨尔本｜Melbourne
+    multiplier: 1
+    region: 澳大利亚
+    flag: 🇦🇺
+    tags: []
+- name: 🇮🇳 印度｜India 01
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 27389
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 印度｜India 01
+    cleanName: 印度｜India 01
+    multiplier: 1
+    region: 印度
+    flag: 🇮🇳
+    tags: []
+- name: 🇮🇳 印度｜India 02
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 10545
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 印度｜India 02
+    cleanName: 印度｜India 02
+    multiplier: 1
+    region: 印度
+    flag: 🇮🇳
+    tags: []
+- name: 🇦🇪 迪拜｜Dubai
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 11749
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 迪拜｜Dubai
+    cleanName: 迪拜｜Dubai
+    multiplier: 1
+    region: 阿联酋
+    flag: 🇦🇪
+    tags: []
+- name: 🇮🇩 印尼｜Indonesia
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 18752
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 印尼｜Indonesia
+    cleanName: 印尼｜Indonesia
+    multiplier: 1
+    region: 印尼
+    flag: 🇮🇩
+    tags: []
+- name: 🇧🇷 巴西｜Brazil 01
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 39834
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 巴西｜Brazil 01
+    cleanName: 巴西｜Brazil 01
+    multiplier: 1
+    region: 巴西
+    flag: 🇧🇷
+    tags: []
+- name: 🇧🇷 巴西｜Brazil 02
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 48707
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 巴西｜Brazil 02
+    cleanName: 巴西｜Brazil 02
+    multiplier: 1
+    region: 巴西
+    flag: 🇧🇷
+    tags: []
+- name: 🇬🇧 英国｜United Kingdom
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 18483
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 英国｜United Kingdom
+    cleanName: 英国｜United Kingdom
+    multiplier: 1
+    region: 英国
+    flag: 🇬🇧
+    tags:
+    - Kingdom
+- name: 🇫🇷 法国｜France
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 42630
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 法国｜France
+    cleanName: 法国｜France
+    multiplier: 1
+    region: 法国
+    flag: 🇫🇷
+    tags: []
+- name: 🇩🇪 德国｜Germany 01
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 10031
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 德国｜Germany 01
+    cleanName: 德国｜Germany 01
+    multiplier: 1
+    region: 德国
+    flag: 🇩🇪
+    tags: []
+- name: 🇩🇪 德国｜Germany 02
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 40808
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 德国｜Germany 02
+    cleanName: 德国｜Germany 02
+    multiplier: 1
+    region: 德国
+    flag: 🇩🇪
+    tags: []
+- name: 🇪🇬 埃及 ｜ Egypt
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 21101
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: ZtsDojJpfv7uuBFaVKwmkVUVoSCRDcC8jcpF0EMC9Cw
+    short-id: 50458fb6
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 埃及 ｜ Egypt
+    cleanName: 埃及 ｜ Egypt
+    multiplier: 1
+    region: 埃及
+    flag: 🇪🇬
+    tags:
+    - Egypt
+- name: 🇷🇺 俄罗斯｜Russia
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 40066
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 俄罗斯｜Russia
+    cleanName: 俄罗斯｜Russia
+    multiplier: 1
+    region: 俄罗斯
+    flag: 🇷🇺
+    tags: []
+- name: 🇺🇦 乌克兰｜Ukraina
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 9650
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: vEdoXzEFkEfn4QABogXatq-ixWyk4urAk6qrlpYr4CA
+    short-id: 41e49eb5
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 乌克兰｜Ukraina
+    cleanName: 乌克兰｜Ukraina
+    multiplier: 1
+    region: 乌克兰
+    flag: 🇺🇦
+    tags: []
+- name: 🇦🇷 阿根廷｜Argentina
+  type: vless
+  server: xmvkqplrtyhnsadfgoeubcizw.beupisp.com
+  port: 41314
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 阿根廷｜Argentina
+    cleanName: 阿根廷｜Argentina
+    multiplier: 1
+    region: 阿根廷
+    flag: 🇦🇷
+    tags: []
+- name: 🇲🇽 墨西哥｜Mexico 01
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 34860
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 墨西哥｜Mexico 01
+    cleanName: 墨西哥｜Mexico 01
+    multiplier: 1
+    region: 墨西哥
+    flag: 🇲🇽
+    tags: []
+- name: 🇲🇽 墨西哥｜Mexico 02
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 44051
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 墨西哥｜Mexico 02
+    cleanName: 墨西哥｜Mexico 02
+    multiplier: 1
+    region: 墨西哥
+    flag: 🇲🇽
+    tags: []
+- name: 🇨🇦 加拿大｜Canada
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 49308
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 加拿大｜Canada
+    cleanName: 加拿大｜Canada
+    multiplier: 1
+    region: 加拿大
+    flag: 🇨🇦
+    tags: []
+- name: 🇨🇦 多伦多｜Canada
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 11531
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 多伦多｜Canada
+    cleanName: 多伦多｜Canada
+    multiplier: 1
+    region: 加拿大
+    flag: 🇨🇦
+    tags: []
+- name: 🇮🇱 以色列｜Israel
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 42154
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 以色列｜Israel
+    cleanName: 以色列｜Israel
+    multiplier: 1
+    region: 以色列
+    flag: 🇮🇱
+    tags: []
+- name: 🇪🇸 西班牙｜Spain
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 11854
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 西班牙｜Spain
+    cleanName: 西班牙｜Spain
+    multiplier: 1
+    region: 西班牙
+    flag: 🇪🇸
+    tags: []
+- name: 🇮🇹 意大利｜Italy
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 12238
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 意大利｜Italy
+    cleanName: 意大利｜Italy
+    multiplier: 1
+    region: 意大利
+    flag: 🇮🇹
+    tags: []
+- name: 🇦🇹 奥地利｜Austria
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 23831
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 奥地利｜Austria
+    cleanName: 奥地利｜Austria
+    multiplier: 1
+    region: 奥地利
+    flag: 🇦🇹
+    tags: []
+- name: 🇭🇺 匈牙利｜Hungary
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 15019
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 匈牙利｜Hungary
+    cleanName: 匈牙利｜Hungary
+    multiplier: 1
+    region: 匈牙利
+    flag: 🇭🇺
+    tags: []
+- name: 🇲🇰 马其顿｜Macedonia
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 51007
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 马其顿｜Macedonia
+    cleanName: 马其顿｜Macedonia
+    multiplier: 1
+    region: 北马其顿
+    flag: 🇲🇰
+    tags: []
+- name: 🇱🇹 立陶宛｜Lithuania
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 44073
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 立陶宛｜Lithuania
+    cleanName: 立陶宛｜Lithuania
+    multiplier: 1
+    region: 立陶宛
+    flag: 🇱🇹
+    tags: []
+- name: 🇹🇷 土耳其｜Turkey
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 51064
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 土耳其｜Turkey
+    cleanName: 土耳其｜Turkey
+    multiplier: 1
+    region: 土耳其
+    flag: 🇹🇷
+    tags: []
+- name: 🇨🇭 瑞士｜Switzerland
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 41826
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 瑞士｜Switzerland
+    cleanName: 瑞士｜Switzerland
+    multiplier: 1
+    region: 瑞士
+    flag: 🇨🇭
+    tags: []
+- name: 🇸🇦 沙特｜Saudi Arabia
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 22925
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 沙特｜Saudi Arabia
+    cleanName: 沙特｜Saudi Arabia
+    multiplier: 1
+    region: 沙特
+    flag: 🇸🇦
+    tags:
+    - Arabia
+- name: 🇳🇱 荷兰｜Netherlands
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 44116
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 荷兰｜Netherlands
+    cleanName: 荷兰｜Netherlands
+    multiplier: 1
+    region: 荷兰
+    flag: 🇳🇱
+    tags: []
+- name: 🌍 智利｜Chile 01
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 16615
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 智利｜Chile 01
+    cleanName: 智利｜Chile 01
+    multiplier: 1
+    region: 其他
+    flag: 🌍
+    tags: []
+- name: 🌍 智利｜Chile 02
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 17979
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 智利｜Chile 02
+    cleanName: 智利｜Chile 02
+    multiplier: 1
+    region: 其他
+    flag: 🌍
+    tags: []
+- name: 🇨🇿 捷克｜Czech
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 17371
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 捷克｜Czech
+    cleanName: 捷克｜Czech
+    multiplier: 1
+    region: 捷克
+    flag: 🇨🇿
+    tags: []
+- name: 🇸🇪 瑞典｜Sweden
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 52438
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 瑞典｜Sweden
+    cleanName: 瑞典｜Sweden
+    multiplier: 1
+    region: 瑞典
+    flag: 🇸🇪
+    tags: []
+- name: 🇿🇦 南非｜South Africa
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 12949
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 南非｜South Africa
+    cleanName: 南非｜South Africa
+    multiplier: 1
+    region: 南非
+    flag: 🇿🇦
+    tags:
+    - Africa
+- name: 🇩🇰 丹麦｜Denmark
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 57791
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 丹麦｜Denmark
+    cleanName: 丹麦｜Denmark
+    multiplier: 1
+    region: 丹麦
+    flag: 🇩🇰
+    tags: []
+- name: 🇳🇴 挪威｜Norway
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 17374
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 挪威｜Norway
+    cleanName: 挪威｜Norway
+    multiplier: 1
+    region: 挪威
+    flag: 🇳🇴
+    tags: []
+- name: 🇦🇿 阿塞拜疆｜Azerbaijan
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 16513
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 阿塞拜疆｜Azerbaijan
+    cleanName: 阿塞拜疆｜Azerbaijan
+    multiplier: 1
+    region: 阿塞拜疆
+    flag: 🇦🇿
+    tags: []
+- name: 🇮🇹 罗马尼亚｜Romania
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 31120
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 罗马尼亚｜Romania
+    cleanName: 罗马尼亚｜Romania
+    multiplier: 1
+    region: 意大利
+    flag: 🇮🇹
+    tags: []
+- name: 🌍 尼日利亚｜Nigeria
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 25488
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 尼日利亚｜Nigeria
+    cleanName: 尼日利亚｜Nigeria
+    multiplier: 1
+    region: 其他
+    flag: 🌍
+    tags: []
+- name: 🇨🇴 哥伦比亚｜Colombia
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 10990
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 哥伦比亚｜Colombia
+    cleanName: 哥伦比亚｜Colombia
+    multiplier: 1
+    region: 哥伦比亚
+    flag: 🇨🇴
+    tags: []
+- name: 🌍 卡萨布兰卡｜Morocco
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 15116
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 卡萨布兰卡｜Morocco
+    cleanName: 卡萨布兰卡｜Morocco
+    multiplier: 1
+    region: 其他
+    flag: 🌍
+    tags: []
+- name: 🇿🇦 约翰内斯堡 ｜Johannesburg
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 20695
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: NsNc9QeE4VdwwrhVmxvH0FFIBpUafH1oHvxDB91FAn0
+    short-id: 133e8f32
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 约翰内斯堡 ｜Johannesburg
+    cleanName: 约翰内斯堡 ｜Johannesburg
+    multiplier: 1
+    region: 南非
+    flag: 🇿🇦
+    tags: []
+- name: 🇸🇮 斯洛文尼亚 ｜Slovenia
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 30063
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: qoqH1HTDNp4arqDr2forFmfgzC3iY-pUKuJpWFrWajk
+    short-id: aa75905a
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 斯洛文尼亚 ｜Slovenia
+    cleanName: 斯洛文尼亚 ｜Slovenia
+    multiplier: 1
+    region: 斯洛文尼亚
+    flag: 🇸🇮
+    tags: []
+- name: 🌍 哈萨克斯坦｜Kazakhstan
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 35752
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 哈萨克斯坦｜Kazakhstan
+    cleanName: 哈萨克斯坦｜Kazakhstan
+    multiplier: 1
+    region: 其他
+    flag: 🌍
+    tags: []
+- name: 🌍 吉尔吉斯斯坦｜Kyrgyzstan
+  type: vless
+  server: 0bllwjt9uppd9p7ayfv5y4zuk.hishis.cn
+  port: 10056
+  uuid: 8a3d2ee2-37f6-46ae-a5cf-5ad62d56eb64
+  tls: true
+  reality-opts:
+    public-key: OgbAhQpciw6lM7etNl0Z6gPfJ7l0p_Oq8FGv2nDamh4
+    short-id: 8d26d7af
+  servername: www.python.org
+  sni: www.python.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  udp: false
+  metadata:
+    originalName: 吉尔吉斯斯坦｜Kyrgyzstan
+    cleanName: 吉尔吉斯斯坦｜Kyrgyzstan
+    multiplier: 1
+    region: 其他
+    flag: 🌍
+    tags: []
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - 🔯 故障转移
+  - DIRECT
+  - 🇭🇰 香港｜Hong Kong 01
+  - 🇭🇰 香港｜Hong Kong 02
+  - 🇭🇰 香港｜Hong Kong 03
+  - 🇭🇰 香港｜Hong Kong 04
+  - 🇭🇰 香港｜Hong Kong 05
+  - 🇭🇰 香港｜Hong Kong 06
+  - 🇭🇰 香港｜Hong Kong 07
+  - 🇭🇰 香港｜Hong Kong 08
+  - 🇭🇰 香港｜Hong Kong 09
+  - 🇭🇰 香港｜Hong Kong 10
+  - 🇯🇵 日本｜Japan 01
+  - 🇯🇵 日本｜Japan 02
+  - 🇯🇵 日本｜Japan 03
+  - 🇯🇵 日本｜Japan 04
+  - 🇯🇵 日本｜Japan 05
+  - 🇯🇵 日本｜JP 06
+  - 🇯🇵 日本｜Japan 07
+  - 🇯🇵 日本｜Japan 08
+  - 🇨🇳 台湾｜Taiwan 01
+  - 🇨🇳 台湾｜Taiwan 02
+  - 🇨🇳 台湾｜Taiwan 03
+  - 🇨🇳 台湾｜Taiwan 04
+  - 🇨🇳 台湾｜Taiwan 05
+  - 🇨🇳 台湾｜Taiwan 06
+  - 🇨🇳 台湾｜Taiwan 07
+  - 🇨🇳 台湾｜Taiwan 08
+  - 🇺🇸 美国 AT&T｜US 01
+  - 🇺🇸 美国 AT&T｜US 02
+  - 🇺🇸 美国 AT&T｜US 03
+  - 🇺🇸 美国 AT&T｜US 04
+  - 🇺🇸 美国｜USA 01 PRO
+  - 🇺🇸 美国｜USA 02 PRO
+  - 🇺🇸 美国｜USA 03 PRO
+  - 🇺🇸 美国｜USA 04 PRO
+  - 🇺🇸 美国｜USA 01
+  - 🇺🇸 美国｜USA 02
+  - 🇺🇸 美国｜USA 03
+  - 🇺🇸 美国｜USA 04
+  - 🇺🇸 美国｜USA 05
+  - 🇺🇸 美国｜USA 06
+  - 🇺🇸 美国｜USA 07 x 0.2
+  - 🇺🇸 美国｜USA 08 x 0.2
+  - 🇸🇬 新加坡｜Singapore 01
+  - 🇸🇬 新加坡｜Singapore 02
+  - 🇸🇬 新加坡｜Singapore 03
+  - 🇸🇬 新加坡｜Singapore 04
+  - 🇸🇬 新加坡｜Singapore 05
+  - 🇸🇬 新加坡｜Singapore 06
+  - 🇸🇬 新加坡｜Singapore 07
+  - 🇸🇬 新加坡｜Singapore 08
+  - 🌍 🎬 Emby 01 x 0.2
+  - 🌍 🎬 Emby 02 x 0.2
+  - 🌍 🎬 Emby 03 x 0.2
+  - 🌍 🎬 Emby 04 x 0.2
+  - 🎬 Emby｜01 · 0.2×
+  - 🎬 Emby｜02 · 0.2×
+  - 🎬 Emby｜03 · 0.2×
+  - 🎬 Emby｜04 · 0.2×
+  - 🇰🇷 韩国｜Korea 01
+  - 🇰🇷 韩国｜Korea 02
+  - 🇰🇷 韩国｜Korea 03
+  - 🇰🇷 韩国｜Korea 04
+  - 🇲🇾 马来西亚｜Malaysia 01
+  - 🇲🇾 马来西亚｜Malaysia 02
+  - 🇲🇾 马来西亚｜Malaysia 03
+  - 🇲🇾 马来西亚｜Malaysia 04
+  - 🇹🇭 泰国｜Thailand 01
+  - 🇹🇭 泰国｜Thailand 02
+  - 🇹🇭 泰国｜Thailand 03
+  - 🇹🇭 泰国｜Thailand 04
+  - 🇻🇳 越南｜Vietnam 01
+  - 🇻🇳 越南｜Vietnam 02
+  - 🇻🇳 越南｜Vietnam 03
+  - 🇻🇳 越南｜Vietnam 04
+  - 🌍 澳门｜Macau 01
+  - 🌍 澳门｜Macau 02
+  - 🌍 澳门｜Macau 03
+  - 🌍 澳门｜Macau 04
+  - 🇵🇭 菲律宾｜Philippines 01
+  - 🇵🇭 菲律宾｜Philippines 02
+  - 🇵🇭 菲律宾｜Philippines 03
+  - 🇵🇭 菲律宾｜Philippines 04
+  - 🇦🇺 悉尼｜Sydney
+  - 🇦🇺 墨尔本｜Melbourne
+  - 🇮🇳 印度｜India 01
+  - 🇮🇳 印度｜India 02
+  - 🇦🇪 迪拜｜Dubai
+  - 🇮🇩 印尼｜Indonesia
+  - 🇧🇷 巴西｜Brazil 01
+  - 🇧🇷 巴西｜Brazil 02
+  - 🇬🇧 英国｜United Kingdom
+  - 🇫🇷 法国｜France
+  - 🇩🇪 德国｜Germany 01
+  - 🇩🇪 德国｜Germany 02
+  - 🇪🇬 埃及 ｜ Egypt
+  - 🇷🇺 俄罗斯｜Russia
+  - 🇺🇦 乌克兰｜Ukraina
+  - 🇦🇷 阿根廷｜Argentina
+  - 🇲🇽 墨西哥｜Mexico 01
+  - 🇲🇽 墨西哥｜Mexico 02
+  - 🇨🇦 加拿大｜Canada
+  - 🇨🇦 多伦多｜Canada
+  - 🇮🇱 以色列｜Israel
+  - 🇪🇸 西班牙｜Spain
+  - 🇮🇹 意大利｜Italy
+  - 🇦🇹 奥地利｜Austria
+  - 🇭🇺 匈牙利｜Hungary
+  - 🇲🇰 马其顿｜Macedonia
+  - 🇱🇹 立陶宛｜Lithuania
+  - 🇹🇷 土耳其｜Turkey
+  - 🇨🇭 瑞士｜Switzerland
+  - 🇸🇦 沙特｜Saudi Arabia
+  - 🇳🇱 荷兰｜Netherlands
+  - 🌍 智利｜Chile 01
+  - 🌍 智利｜Chile 02
+  - 🇨🇿 捷克｜Czech
+  - 🇸🇪 瑞典｜Sweden
+  - 🇿🇦 南非｜South Africa
+  - 🇩🇰 丹麦｜Denmark
+  - 🇳🇴 挪威｜Norway
+  - 🇦🇿 阿塞拜疆｜Azerbaijan
+  - 🇮🇹 罗马尼亚｜Romania
+  - 🌍 尼日利亚｜Nigeria
+  - 🇨🇴 哥伦比亚｜Colombia
+  - 🌍 卡萨布兰卡｜Morocco
+  - 🇿🇦 约翰内斯堡 ｜Johannesburg
+  - 🇸🇮 斯洛文尼亚 ｜Slovenia
+  - 🌍 哈萨克斯坦｜Kazakhstan
+  - 🌍 吉尔吉斯斯坦｜Kyrgyzstan
+  filter: .*
+- name: ♻️ 自动选择
+  type: url-test
+  proxies:
+  - 🇭🇰 香港｜Hong Kong 01
+  - 🇭🇰 香港｜Hong Kong 02
+  - 🇭🇰 香港｜Hong Kong 03
+  - 🇭🇰 香港｜Hong Kong 04
+  - 🇭🇰 香港｜Hong Kong 05
+  - 🇭🇰 香港｜Hong Kong 06
+  - 🇭🇰 香港｜Hong Kong 07
+  - 🇭🇰 香港｜Hong Kong 08
+  - 🇭🇰 香港｜Hong Kong 09
+  - 🇭🇰 香港｜Hong Kong 10
+  - 🇯🇵 日本｜Japan 01
+  - 🇯🇵 日本｜Japan 02
+  - 🇯🇵 日本｜Japan 03
+  - 🇯🇵 日本｜Japan 04
+  - 🇯🇵 日本｜Japan 05
+  - 🇯🇵 日本｜JP 06
+  - 🇯🇵 日本｜Japan 07
+  - 🇯🇵 日本｜Japan 08
+  - 🇨🇳 台湾｜Taiwan 01
+  - 🇨🇳 台湾｜Taiwan 02
+  - 🇨🇳 台湾｜Taiwan 03
+  - 🇨🇳 台湾｜Taiwan 04
+  - 🇨🇳 台湾｜Taiwan 05
+  - 🇨🇳 台湾｜Taiwan 06
+  - 🇨🇳 台湾｜Taiwan 07
+  - 🇨🇳 台湾｜Taiwan 08
+  - 🇺🇸 美国 AT&T｜US 01
+  - 🇺🇸 美国 AT&T｜US 02
+  - 🇺🇸 美国 AT&T｜US 03
+  - 🇺🇸 美国 AT&T｜US 04
+  - 🇺🇸 美国｜USA 01 PRO
+  - 🇺🇸 美国｜USA 02 PRO
+  - 🇺🇸 美国｜USA 03 PRO
+  - 🇺🇸 美国｜USA 04 PRO
+  - 🇺🇸 美国｜USA 01
+  - 🇺🇸 美国｜USA 02
+  - 🇺🇸 美国｜USA 03
+  - 🇺🇸 美国｜USA 04
+  - 🇺🇸 美国｜USA 05
+  - 🇺🇸 美国｜USA 06
+  - 🇺🇸 美国｜USA 07 x 0.2
+  - 🇺🇸 美国｜USA 08 x 0.2
+  - 🇸🇬 新加坡｜Singapore 01
+  - 🇸🇬 新加坡｜Singapore 02
+  - 🇸🇬 新加坡｜Singapore 03
+  - 🇸🇬 新加坡｜Singapore 04
+  - 🇸🇬 新加坡｜Singapore 05
+  - 🇸🇬 新加坡｜Singapore 06
+  - 🇸🇬 新加坡｜Singapore 07
+  - 🇸🇬 新加坡｜Singapore 08
+  - 🌍 🎬 Emby 01 x 0.2
+  - 🌍 🎬 Emby 02 x 0.2
+  - 🌍 🎬 Emby 03 x 0.2
+  - 🌍 🎬 Emby 04 x 0.2
+  - 🎬 Emby｜01 · 0.2×
+  - 🎬 Emby｜02 · 0.2×
+  - 🎬 Emby｜03 · 0.2×
+  - 🎬 Emby｜04 · 0.2×
+  - 🇰🇷 韩国｜Korea 01
+  - 🇰🇷 韩国｜Korea 02
+  - 🇰🇷 韩国｜Korea 03
+  - 🇰🇷 韩国｜Korea 04
+  - 🇲🇾 马来西亚｜Malaysia 01
+  - 🇲🇾 马来西亚｜Malaysia 02
+  - 🇲🇾 马来西亚｜Malaysia 03
+  - 🇲🇾 马来西亚｜Malaysia 04
+  - 🇹🇭 泰国｜Thailand 01
+  - 🇹🇭 泰国｜Thailand 02
+  - 🇹🇭 泰国｜Thailand 03
+  - 🇹🇭 泰国｜Thailand 04
+  - 🇻🇳 越南｜Vietnam 01
+  - 🇻🇳 越南｜Vietnam 02
+  - 🇻🇳 越南｜Vietnam 03
+  - 🇻🇳 越南｜Vietnam 04
+  - 🌍 澳门｜Macau 01
+  - 🌍 澳门｜Macau 02
+  - 🌍 澳门｜Macau 03
+  - 🌍 澳门｜Macau 04
+  - 🇵🇭 菲律宾｜Philippines 01
+  - 🇵🇭 菲律宾｜Philippines 02
+  - 🇵🇭 菲律宾｜Philippines 03
+  - 🇵🇭 菲律宾｜Philippines 04
+  - 🇦🇺 悉尼｜Sydney
+  - 🇦🇺 墨尔本｜Melbourne
+  - 🇮🇳 印度｜India 01
+  - 🇮🇳 印度｜India 02
+  - 🇦🇪 迪拜｜Dubai
+  - 🇮🇩 印尼｜Indonesia
+  - 🇧🇷 巴西｜Brazil 01
+  - 🇧🇷 巴西｜Brazil 02
+  - 🇬🇧 英国｜United Kingdom
+  - 🇫🇷 法国｜France
+  - 🇩🇪 德国｜Germany 01
+  - 🇩🇪 德国｜Germany 02
+  - 🇪🇬 埃及 ｜ Egypt
+  - 🇷🇺 俄罗斯｜Russia
+  - 🇺🇦 乌克兰｜Ukraina
+  - 🇦🇷 阿根廷｜Argentina
+  - 🇲🇽 墨西哥｜Mexico 01
+  - 🇲🇽 墨西哥｜Mexico 02
+  - 🇨🇦 加拿大｜Canada
+  - 🇨🇦 多伦多｜Canada
+  - 🇮🇱 以色列｜Israel
+  - 🇪🇸 西班牙｜Spain
+  - 🇮🇹 意大利｜Italy
+  - 🇦🇹 奥地利｜Austria
+  - 🇭🇺 匈牙利｜Hungary
+  - 🇲🇰 马其顿｜Macedonia
+  - 🇱🇹 立陶宛｜Lithuania
+  - 🇹🇷 土耳其｜Turkey
+  - 🇨🇭 瑞士｜Switzerland
+  - 🇸🇦 沙特｜Saudi Arabia
+  - 🇳🇱 荷兰｜Netherlands
+  - 🌍 智利｜Chile 01
+  - 🌍 智利｜Chile 02
+  - 🇨🇿 捷克｜Czech
+  - 🇸🇪 瑞典｜Sweden
+  - 🇿🇦 南非｜South Africa
+  - 🇩🇰 丹麦｜Denmark
+  - 🇳🇴 挪威｜Norway
+  - 🇦🇿 阿塞拜疆｜Azerbaijan
+  - 🇮🇹 罗马尼亚｜Romania
+  - 🌍 尼日利亚｜Nigeria
+  - 🇨🇴 哥伦比亚｜Colombia
+  - 🌍 卡萨布兰卡｜Morocco
+  - 🇿🇦 约翰内斯堡 ｜Johannesburg
+  - 🇸🇮 斯洛文尼亚 ｜Slovenia
+  - 🌍 哈萨克斯坦｜Kazakhstan
+  - 🌍 吉尔吉斯斯坦｜Kyrgyzstan
+  filter: .*
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 🔯 故障转移
+  type: fallback
+  proxies:
+  - 🇭🇰 香港｜Hong Kong 01
+  - 🇭🇰 香港｜Hong Kong 02
+  - 🇭🇰 香港｜Hong Kong 03
+  - 🇭🇰 香港｜Hong Kong 04
+  - 🇭🇰 香港｜Hong Kong 05
+  - 🇭🇰 香港｜Hong Kong 06
+  - 🇭🇰 香港｜Hong Kong 07
+  - 🇭🇰 香港｜Hong Kong 08
+  - 🇭🇰 香港｜Hong Kong 09
+  - 🇭🇰 香港｜Hong Kong 10
+  - 🇯🇵 日本｜Japan 01
+  - 🇯🇵 日本｜Japan 02
+  - 🇯🇵 日本｜Japan 03
+  - 🇯🇵 日本｜Japan 04
+  - 🇯🇵 日本｜Japan 05
+  - 🇯🇵 日本｜JP 06
+  - 🇯🇵 日本｜Japan 07
+  - 🇯🇵 日本｜Japan 08
+  - 🇨🇳 台湾｜Taiwan 01
+  - 🇨🇳 台湾｜Taiwan 02
+  - 🇨🇳 台湾｜Taiwan 03
+  - 🇨🇳 台湾｜Taiwan 04
+  - 🇨🇳 台湾｜Taiwan 05
+  - 🇨🇳 台湾｜Taiwan 06
+  - 🇨🇳 台湾｜Taiwan 07
+  - 🇨🇳 台湾｜Taiwan 08
+  - 🇺🇸 美国 AT&T｜US 01
+  - 🇺🇸 美国 AT&T｜US 02
+  - 🇺🇸 美国 AT&T｜US 03
+  - 🇺🇸 美国 AT&T｜US 04
+  - 🇺🇸 美国｜USA 01 PRO
+  - 🇺🇸 美国｜USA 02 PRO
+  - 🇺🇸 美国｜USA 03 PRO
+  - 🇺🇸 美国｜USA 04 PRO
+  - 🇺🇸 美国｜USA 01
+  - 🇺🇸 美国｜USA 02
+  - 🇺🇸 美国｜USA 03
+  - 🇺🇸 美国｜USA 04
+  - 🇺🇸 美国｜USA 05
+  - 🇺🇸 美国｜USA 06
+  - 🇺🇸 美国｜USA 07 x 0.2
+  - 🇺🇸 美国｜USA 08 x 0.2
+  - 🇸🇬 新加坡｜Singapore 01
+  - 🇸🇬 新加坡｜Singapore 02
+  - 🇸🇬 新加坡｜Singapore 03
+  - 🇸🇬 新加坡｜Singapore 04
+  - 🇸🇬 新加坡｜Singapore 05
+  - 🇸🇬 新加坡｜Singapore 06
+  - 🇸🇬 新加坡｜Singapore 07
+  - 🇸🇬 新加坡｜Singapore 08
+  - 🌍 🎬 Emby 01 x 0.2
+  - 🌍 🎬 Emby 02 x 0.2
+  - 🌍 🎬 Emby 03 x 0.2
+  - 🌍 🎬 Emby 04 x 0.2
+  - 🎬 Emby｜01 · 0.2×
+  - 🎬 Emby｜02 · 0.2×
+  - 🎬 Emby｜03 · 0.2×
+  - 🎬 Emby｜04 · 0.2×
+  - 🇰🇷 韩国｜Korea 01
+  - 🇰🇷 韩国｜Korea 02
+  - 🇰🇷 韩国｜Korea 03
+  - 🇰🇷 韩国｜Korea 04
+  - 🇲🇾 马来西亚｜Malaysia 01
+  - 🇲🇾 马来西亚｜Malaysia 02
+  - 🇲🇾 马来西亚｜Malaysia 03
+  - 🇲🇾 马来西亚｜Malaysia 04
+  - 🇹🇭 泰国｜Thailand 01
+  - 🇹🇭 泰国｜Thailand 02
+  - 🇹🇭 泰国｜Thailand 03
+  - 🇹🇭 泰国｜Thailand 04
+  - 🇻🇳 越南｜Vietnam 01
+  - 🇻🇳 越南｜Vietnam 02
+  - 🇻🇳 越南｜Vietnam 03
+  - 🇻🇳 越南｜Vietnam 04
+  - 🌍 澳门｜Macau 01
+  - 🌍 澳门｜Macau 02
+  - 🌍 澳门｜Macau 03
+  - 🌍 澳门｜Macau 04
+  - 🇵🇭 菲律宾｜Philippines 01
+  - 🇵🇭 菲律宾｜Philippines 02
+  - 🇵🇭 菲律宾｜Philippines 03
+  - 🇵🇭 菲律宾｜Philippines 04
+  - 🇦🇺 悉尼｜Sydney
+  - 🇦🇺 墨尔本｜Melbourne
+  - 🇮🇳 印度｜India 01
+  - 🇮🇳 印度｜India 02
+  - 🇦🇪 迪拜｜Dubai
+  - 🇮🇩 印尼｜Indonesia
+  - 🇧🇷 巴西｜Brazil 01
+  - 🇧🇷 巴西｜Brazil 02
+  - 🇬🇧 英国｜United Kingdom
+  - 🇫🇷 法国｜France
+  - 🇩🇪 德国｜Germany 01
+  - 🇩🇪 德国｜Germany 02
+  - 🇪🇬 埃及 ｜ Egypt
+  - 🇷🇺 俄罗斯｜Russia
+  - 🇺🇦 乌克兰｜Ukraina
+  - 🇦🇷 阿根廷｜Argentina
+  - 🇲🇽 墨西哥｜Mexico 01
+  - 🇲🇽 墨西哥｜Mexico 02
+  - 🇨🇦 加拿大｜Canada
+  - 🇨🇦 多伦多｜Canada
+  - 🇮🇱 以色列｜Israel
+  - 🇪🇸 西班牙｜Spain
+  - 🇮🇹 意大利｜Italy
+  - 🇦🇹 奥地利｜Austria
+  - 🇭🇺 匈牙利｜Hungary
+  - 🇲🇰 马其顿｜Macedonia
+  - 🇱🇹 立陶宛｜Lithuania
+  - 🇹🇷 土耳其｜Turkey
+  - 🇨🇭 瑞士｜Switzerland
+  - 🇸🇦 沙特｜Saudi Arabia
+  - 🇳🇱 荷兰｜Netherlands
+  - 🌍 智利｜Chile 01
+  - 🌍 智利｜Chile 02
+  - 🇨🇿 捷克｜Czech
+  - 🇸🇪 瑞典｜Sweden
+  - 🇿🇦 南非｜South Africa
+  - 🇩🇰 丹麦｜Denmark
+  - 🇳🇴 挪威｜Norway
+  - 🇦🇿 阿塞拜疆｜Azerbaijan
+  - 🇮🇹 罗马尼亚｜Romania
+  - 🌍 尼日利亚｜Nigeria
+  - 🇨🇴 哥伦比亚｜Colombia
+  - 🌍 卡萨布兰卡｜Morocco
+  - 🇿🇦 约翰内斯堡 ｜Johannesburg
+  - 🇸🇮 斯洛文尼亚 ｜Slovenia
+  - 🌍 哈萨克斯坦｜Kazakhstan
+  - 🌍 吉尔吉斯斯坦｜Kyrgyzstan
+  filter: .*
+  url: http://www.gstatic.com/generate_204
+  interval: 180
+- name: 🎯 全球直连
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+- name: 🛑 全球拦截
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - ♻️ 自动选择
+  - 🔯 故障转移
+  - 🇭🇰 香港｜Hong Kong 01
+  - 🇭🇰 香港｜Hong Kong 02
+  - 🇭🇰 香港｜Hong Kong 03
+  - 🇭🇰 香港｜Hong Kong 04
+  - 🇭🇰 香港｜Hong Kong 05
+  - 🇭🇰 香港｜Hong Kong 06
+  - 🇭🇰 香港｜Hong Kong 07
+  - 🇭🇰 香港｜Hong Kong 08
+  - 🇭🇰 香港｜Hong Kong 09
+  - 🇭🇰 香港｜Hong Kong 10
+  - 🇯🇵 日本｜Japan 01
+  - 🇯🇵 日本｜Japan 02
+  - 🇯🇵 日本｜Japan 03
+  - 🇯🇵 日本｜Japan 04
+  - 🇯🇵 日本｜Japan 05
+  - 🇯🇵 日本｜JP 06
+  - 🇯🇵 日本｜Japan 07
+  - 🇯🇵 日本｜Japan 08
+  - 🇨🇳 台湾｜Taiwan 01
+  - 🇨🇳 台湾｜Taiwan 02
+  - 🇨🇳 台湾｜Taiwan 03
+  - 🇨🇳 台湾｜Taiwan 04
+  - 🇨🇳 台湾｜Taiwan 05
+  - 🇨🇳 台湾｜Taiwan 06
+  - 🇨🇳 台湾｜Taiwan 07
+  - 🇨🇳 台湾｜Taiwan 08
+  - 🇺🇸 美国 AT&T｜US 01
+  - 🇺🇸 美国 AT&T｜US 02
+  - 🇺🇸 美国 AT&T｜US 03
+  - 🇺🇸 美国 AT&T｜US 04
+  - 🇺🇸 美国｜USA 01 PRO
+  - 🇺🇸 美国｜USA 02 PRO
+  - 🇺🇸 美国｜USA 03 PRO
+  - 🇺🇸 美国｜USA 04 PRO
+  - 🇺🇸 美国｜USA 01
+  - 🇺🇸 美国｜USA 02
+  - 🇺🇸 美国｜USA 03
+  - 🇺🇸 美国｜USA 04
+  - 🇺🇸 美国｜USA 05
+  - 🇺🇸 美国｜USA 06
+  - 🇺🇸 美国｜USA 07 x 0.2
+  - 🇺🇸 美国｜USA 08 x 0.2
+  - 🇸🇬 新加坡｜Singapore 01
+  - 🇸🇬 新加坡｜Singapore 02
+  - 🇸🇬 新加坡｜Singapore 03
+  - 🇸🇬 新加坡｜Singapore 04
+  - 🇸🇬 新加坡｜Singapore 05
+  - 🇸🇬 新加坡｜Singapore 06
+  - 🇸🇬 新加坡｜Singapore 07
+  - 🇸🇬 新加坡｜Singapore 08
+  - 🌍 🎬 Emby 01 x 0.2
+  - 🌍 🎬 Emby 02 x 0.2
+  - 🌍 🎬 Emby 03 x 0.2
+  - 🌍 🎬 Emby 04 x 0.2
+  - 🎬 Emby｜01 · 0.2×
+  - 🎬 Emby｜02 · 0.2×
+  - 🎬 Emby｜03 · 0.2×
+  - 🎬 Emby｜04 · 0.2×
+  - 🇰🇷 韩国｜Korea 01
+  - 🇰🇷 韩国｜Korea 02
+  - 🇰🇷 韩国｜Korea 03
+  - 🇰🇷 韩国｜Korea 04
+  - 🇲🇾 马来西亚｜Malaysia 01
+  - 🇲🇾 马来西亚｜Malaysia 02
+  - 🇲🇾 马来西亚｜Malaysia 03
+  - 🇲🇾 马来西亚｜Malaysia 04
+  - 🇹🇭 泰国｜Thailand 01
+  - 🇹🇭 泰国｜Thailand 02
+  - 🇹🇭 泰国｜Thailand 03
+  - 🇹🇭 泰国｜Thailand 04
+  - 🇻🇳 越南｜Vietnam 01
+  - 🇻🇳 越南｜Vietnam 02
+  - 🇻🇳 越南｜Vietnam 03
+  - 🇻🇳 越南｜Vietnam 04
+  - 🌍 澳门｜Macau 01
+  - 🌍 澳门｜Macau 02
+  - 🌍 澳门｜Macau 03
+  - 🌍 澳门｜Macau 04
+  - 🇵🇭 菲律宾｜Philippines 01
+  - 🇵🇭 菲律宾｜Philippines 02
+  - 🇵🇭 菲律宾｜Philippines 03
+  - 🇵🇭 菲律宾｜Philippines 04
+  - 🇦🇺 悉尼｜Sydney
+  - 🇦🇺 墨尔本｜Melbourne
+  - 🇮🇳 印度｜India 01
+  - 🇮🇳 印度｜India 02
+  - 🇦🇪 迪拜｜Dubai
+  - 🇮🇩 印尼｜Indonesia
+  - 🇧🇷 巴西｜Brazil 01
+  - 🇧🇷 巴西｜Brazil 02
+  - 🇬🇧 英国｜United Kingdom
+  - 🇫🇷 法国｜France
+  - 🇩🇪 德国｜Germany 01
+  - 🇩🇪 德国｜Germany 02
+  - 🇪🇬 埃及 ｜ Egypt
+  - 🇷🇺 俄罗斯｜Russia
+  - 🇺🇦 乌克兰｜Ukraina
+  - 🇦🇷 阿根廷｜Argentina
+  - 🇲🇽 墨西哥｜Mexico 01
+  - 🇲🇽 墨西哥｜Mexico 02
+  - 🇨🇦 加拿大｜Canada
+  - 🇨🇦 多伦多｜Canada
+  - 🇮🇱 以色列｜Israel
+  - 🇪🇸 西班牙｜Spain
+  - 🇮🇹 意大利｜Italy
+  - 🇦🇹 奥地利｜Austria
+  - 🇭🇺 匈牙利｜Hungary
+  - 🇲🇰 马其顿｜Macedonia
+  - 🇱🇹 立陶宛｜Lithuania
+  - 🇹🇷 土耳其｜Turkey
+  - 🇨🇭 瑞士｜Switzerland
+  - 🇸🇦 沙特｜Saudi Arabia
+  - 🇳🇱 荷兰｜Netherlands
+  - 🌍 智利｜Chile 01
+  - 🌍 智利｜Chile 02
+  - 🇨🇿 捷克｜Czech
+  - 🇸🇪 瑞典｜Sweden
+  - 🇿🇦 南非｜South Africa
+  - 🇩🇰 丹麦｜Denmark
+  - 🇳🇴 挪威｜Norway
+  - 🇦🇿 阿塞拜疆｜Azerbaijan
+  - 🇮🇹 罗马尼亚｜Romania
+  - 🌍 尼日利亚｜Nigeria
+  - 🇨🇴 哥伦比亚｜Colombia
+  - 🌍 卡萨布兰卡｜Morocco
+  - 🇿🇦 约翰内斯堡 ｜Johannesburg
+  - 🇸🇮 斯洛文尼亚 ｜Slovenia
+  - 🌍 哈萨克斯坦｜Kazakhstan
+  - 🌍 吉尔吉斯斯坦｜Kyrgyzstan
+  filter: .*
+rule-providers:
+  localareanetwork_0:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+    path: ./ruleset/localareanetwork_0.list
+    interval: 86400
+    format: text
+  unban_1:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+    path: ./ruleset/unban_1.list
+    interval: 86400
+    format: text
+  banad_2:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+    path: ./ruleset/banad_2.list
+    interval: 86400
+    format: text
+  banprogramad_3:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+    path: ./ruleset/banprogramad_3.list
+    interval: 86400
+    format: text
+  googlecn_4:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleCN.yaml
+    path: ./ruleset/googlecn_4.yaml
+    interval: 86400
+  steamcn_5:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/SteamCN.yaml
+    path: ./ruleset/steamcn_5.yaml
+    interval: 86400
+  telegram_6:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Telegram.yaml
+    path: ./ruleset/telegram_6.yaml
+    interval: 86400
+  proxymedia_7:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+    path: ./ruleset/proxymedia_7.list
+    interval: 86400
+    format: text
+  proxylite_8:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyLite.yaml
+    path: ./ruleset/proxylite_8.yaml
+    interval: 86400
+  chinadomain_9:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+    path: ./ruleset/chinadomain_9.list
+    interval: 86400
+    format: text
+  chinacompanyip_10:
+    type: http
+    behavior: ipcidr
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaCompanyIp.yaml
+    path: ./ruleset/chinacompanyip_10.yaml
+    interval: 86400
+rules:
+- RULE-SET,localareanetwork_0,🎯 全球直连
+- RULE-SET,unban_1,🎯 全球直连
+- RULE-SET,banad_2,🛑 全球拦截
+- RULE-SET,banprogramad_3,🛑 全球拦截
+- RULE-SET,googlecn_4,🎯 全球直连
+- RULE-SET,steamcn_5,🎯 全球直连
+- RULE-SET,telegram_6,🚀 节点选择
+- RULE-SET,proxymedia_7,🚀 节点选择
+- RULE-SET,proxylite_8,🚀 节点选择
+- RULE-SET,chinadomain_9,🎯 全球直连
+- RULE-SET,chinacompanyip_10,🎯 全球直连
+- GEOIP,CN,🎯 全球直连
+- MATCH,🐟 漏网之鱼
+profile:
+  store-selected: true
+  subscription-url: https://sub.613888.xyz/profiles/qKWxA9tHW3Rd6Uy
